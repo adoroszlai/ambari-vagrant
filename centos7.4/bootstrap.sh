@@ -20,3 +20,5 @@ echo "/swapfile       none    swap    sw      0       0" >> /etc/fstab
 
 cp /vagrant/insecure_private_key /root/ec2-keypair
 chmod 600 /root/ec2-keypair
+
+yum install -y cpp curl gcc libpcap libtirpc-devel nmap-ncat python-devel unzip vim wget
