@@ -11,6 +11,9 @@ service ntpd start
 mkdir -p /root/.ssh
 chmod 700 /root/.ssh
 cp /home/vagrant/.ssh/authorized_keys /root/.ssh/
+cp /root/.ssh/authorized_keys /root/.ssh/id_rsa.pub
+cp /vagrant/insecure_private_key /root/.ssh/id_rsa
+chmod 600 /root/.ssh/id_rsa
 
 # Increasing swap space
 dd if=/dev/zero of=/swapfile bs=1024 count=1024k
