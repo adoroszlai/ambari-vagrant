@@ -3,7 +3,7 @@
 cp /vagrant/hosts /etc/hosts
 cp /vagrant/resolv.conf /etc/resolv.conf
 
-sed -i -e 's/enabled=1/enabled=0' /etc/yum/pluginconf.d/fastestmirror.conf
+sed -i -e 's/enabled=1/enabled=0/' /etc/yum/pluginconf.d/fastestmirror.conf
 
 yum install -y ntp
 service ntpd start
